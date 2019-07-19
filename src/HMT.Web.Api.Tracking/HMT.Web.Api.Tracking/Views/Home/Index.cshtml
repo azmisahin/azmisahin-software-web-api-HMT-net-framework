@@ -3,3 +3,53 @@
     <p class="lead">A management tool that provides easy access to hardware interfaces to automate management tasks on local or remote computers.</p>
     <p>IT managers and System Specialists; provides fast and practical solutions for monitoring, reporting and auditing critical operations.</p>
 </div>
+
+<!--https://vuejs.org/v2/guide/-->
+<div id="app">
+    <!--https://getbootstrap.com/docs/3.4/components/#panels-->
+    <div class="row">
+        <div class="col-sm-4" v-for="item in PrinterJobs">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="badge">{{ item.ID }}</span> {{ item.Owner }} {{ item.HostPrintQueue }}</h3>
+                </div>
+                <!--Panel Heading-->
+                <div class="panel-body">
+                    <ul>
+                        <li>{{ item.Caption }}</li>
+                        @*<li>{{ item.Description }}</li>*@
+                        <li>{{ item.Document }}</li>
+                        @*<li>{{ item.DriverName }}</li>*@
+                        @*<li>{{ item.Flag }}</li>*@
+                        @*<li>{{ item.HostPrintQueue }}</li>*@
+                        @*<li>{{ item.ID }}</li>*@
+                        @*<li>{{ item.JobId }}</li>*@
+                        @*<li>{{ item.JobStatus }}</li>*@
+                        @*<li>{{ item.Owner }}</li>*@
+                        <li>{{ item.PagesPrinted }}</li>
+                        <li>{{ item.PaperLength }}</li>
+                        <li>{{ item.PaperSize }}</li>
+                        <li>{{ item.PrintProcessor }}</li>
+                        <li>{{ item.Priority }}</li>
+                        <li>{{ item.TimeSubmitted }}</li>
+                        <li>{{ item.TotalPages }}</li>
+                    </ul>
+                </div>
+                <!--Panel Body-->
+                <div class="panel-footer">
+                    <span class="badge">{{ item.JobId }}</span>
+                    <span>{{ item.JobStatus }} </span>
+                </div>
+            </div>
+            <!--Panel-->
+        </div>
+        <!--col-->
+    </div>
+    <!--row-->
+</div>
+<!--app-->
+
+@section scripts{
+    <script src="~/assets/lib/vujs/js/vue.min.js"></script>
+    <script src="~/assets/site/js/watch.js?v=@DateTime.Now.Ticks"></script>
+}

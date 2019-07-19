@@ -190,7 +190,9 @@
     <Content Include="assets\lib\bootstrap\js\bootstrap.js" />
     <Content Include="assets\lib\bootstrap\js\bootstrap.min.js" />
     <Content Include="assets\lib\bootstrap\js\npm.js" />
+    <Content Include="assets\lib\vujs\js\vue.min.js" />
     <Content Include="assets\site\img\favicon.png" />
+    <Content Include="assets\site\js\watch.js" />
     <Content Include="favicon.ico" />
     <Content Include="favicon.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -244,7 +246,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\site\js\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
