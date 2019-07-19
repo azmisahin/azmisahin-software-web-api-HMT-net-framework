@@ -1377,6 +1377,16 @@
             Tracking
             </summary>
         </member>
+        <member name="F:HMT.Web.Api.Tracking.Controllers.PrinterJob.TrackingController.db">
+            <summary>
+            Data Context
+            </summary>
+        </member>
+        <member name="M:HMT.Web.Api.Tracking.Controllers.PrinterJob.TrackingController.#ctor">
+            <summary>
+            Initialize
+            </summary>
+        </member>
         <member name="M:HMT.Web.Api.Tracking.Controllers.PrinterJob.TrackingController.Get">
             <summary>
             Get All Tracking
@@ -1390,7 +1400,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:HMT.Web.Api.Tracking.Controllers.PrinterJob.TrackingController.Post(HMT.Web.Api.Tracking.Models.PrinterJobEvent)">
+        <member name="M:HMT.Web.Api.Tracking.Controllers.PrinterJob.TrackingController.Post(HMT.Web.Api.Tracking.Models.PrinterJob)">
             <summary>
             Tracking
             </summary>
@@ -1404,6 +1414,21 @@
         <member name="M:HMT.Web.Api.Tracking.WebApiApplication.Application_Start">
             <summary>
             Application Start
+            </summary>
+        </member>
+        <member name="T:HMT.Web.Api.Tracking.Models.DataContext">
+            <summary>
+            Data Context
+            </summary>
+        </member>
+        <member name="M:HMT.Web.Api.Tracking.Models.DataContext.#ctor">
+            <summary>
+            Data Context
+            </summary>
+        </member>
+        <member name="P:HMT.Web.Api.Tracking.Models.DataContext.PrintJobs">
+            <summary>
+            Print Jobs
             </summary>
         </member>
         <member name="T:HMT.Web.Api.Tracking.Models.PrinterJobEvent">
@@ -1559,6 +1584,16 @@
         <member name="P:HMT.Web.Api.Tracking.Models.PrinterJobEvent.UntilTime">
             <summary>
             Until Time
+            </summary>
+        </member>
+        <member name="T:HMT.Web.Api.Tracking.Models.PrinterJob">
+            <summary>
+            Printer Job
+            </summary>
+        </member>
+        <member name="P:HMT.Web.Api.Tracking.Models.PrinterJob.ID">
+            <summary>
+            ID
             </summary>
         </member>
     </members>
