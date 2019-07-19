@@ -39,8 +39,19 @@ function HttpRequest(uri) {
         });
 }
 
+// Get Request
+function GetRequest() {
+
+    // Http Request
+    HttpRequest(requestUri);
+}
+
 // Document Ready And Run
-$(document).ready(HttpRequest(requestUri));
+$(document).ready(function () {
+    GetRequest();
+
+    Timer();
+});
 
 /**
  * Bind Data
@@ -57,4 +68,17 @@ function BindData(data) {
             PrinterJobs: data
         }
     });
+}
+
+// Timer
+// Ref : setTimeout
+function Timer() {
+    setTimeout(tick, 5000);
+}
+
+// Tick Timer
+function tick() {
+    console.log("Tick " + new Date());
+    Timer();
+    GetRequest();
 }
