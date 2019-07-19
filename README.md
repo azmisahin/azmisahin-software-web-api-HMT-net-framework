@@ -8,4 +8,4 @@ IT managers and System Specialists; provides fast and practical solutions for mo
 
 Basically, the application interface toolkit that targets windows devices plans to support other operating systems such as linux and macos in the future.
 
-![alt text](docs/media/HMT.Web.Api.Tracking.png "Hardware Management Tool Web Application Api Tracking")
+![alt text](docs/media/HMT.Web.Api.Tracking-api.png "Hardware Management Tool Web Application Api Tracking")
