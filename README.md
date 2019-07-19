@@ -1,7 +1,11 @@
-# devops-architecture-Automation
+# ![Logo](docs/media/favicon.png)
 
-Architecture example of continuous integration, continuous deployment of packaging and version management with dev-ops tools: automation
+## HMT.Web.Api.Tracking - Hardware Management Tool Tracking
 
-## Pipelines
+A management tool that provides easy access to hardware interfaces to automate management tasks on local or remote computers.
 
-[![Build status](https://dev.azure.com/azmisahin-github/azmisahin-software-devops-architecture-Automation-net/_apis/build/status/azmisahin-software-devops-architecture-Automation-net-CI)](https://dev.azure.com/azmisahin-github/azmisahin-software-devops-architecture-Automation-net/_build/latest?definitionId=-1)
+IT managers and System Specialists; provides fast and practical solutions for monitoring, reporting and auditing critical operations.
+
+Basically, the application interface toolkit that targets windows devices plans to support other operating systems such as linux and macos in the future.
+
+![alt text](docs/media/HMT.Web.Api.Tracking.png "Hardware Management Tool Web Application Api Tracking")
