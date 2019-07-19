@@ -53,21 +53,22 @@ $(document).ready(function () {
     Timer();
 });
 
+// vue bind
+// ref: https://vuejs.org/v2/guide/
+var app = new Vue({
+    el: '#app',
+    data: {
+        PrinterJobs: []
+    }
+});
+
 /**
  * Bind Data
  * @param {List<PrinterJob>} data Printer Job List
  */
 function BindData(data) {
 
-    // vue bind
-    // ref: https://vuejs.org/v2/guide/
-
-    var app = new Vue({
-        el: '#app',
-        data: {
-            PrinterJobs: data
-        }
-    });
+    app.$data.PrinterJobs = data;
 }
 
 // Timer
